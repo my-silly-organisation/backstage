@@ -47,7 +47,7 @@ backstage:
           - host: api.github.com
           - host: raw.githubusercontent.com
         cors:
-          origin: http://localhost:3000
+          origin: http://localhost:7007
           methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
           credentials: true
           Access-Control-Allow-Origin: '*'
