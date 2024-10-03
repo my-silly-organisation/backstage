@@ -24,7 +24,7 @@ backstage:
 
     appConfig:
       app:
-        baseUrl: http://${BASE_URL}
+        baseUrl: http://${BASE_URL}:7007
 
       backend: # Note that the baseUrl should be the URL that the browser and other clients
         # should use when communicating with the backend, i.e. it needs to be
@@ -47,7 +47,7 @@ backstage:
           - host: api.github.com
           - host: raw.githubusercontent.com
         cors:
-          origin: http://${BASE_URL}
+          origin: http://localhost:3000
           methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
           credentials: true
           Access-Control-Allow-Origin: '*'
