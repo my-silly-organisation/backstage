@@ -149,13 +149,11 @@ const overviewContent = (
       <EntityHasSubcomponentsCard variant="gridItem" />
     </Grid>
     <EntitySwitch>
-      <EntitySwitch>
-        <EntitySwitch.Case if={e => Boolean(isArgocdAvailable(e))}>
-            <Grid item sm={4}>
-                <EntityArgoCDOverviewCard />
-            </Grid>
-        </EntitySwitch.Case>
-      </EntitySwitch>
+      <EntitySwitch.Case if={e => Boolean(isArgocdAvailable(e))}>
+        <Grid item sm={4}>
+            <EntityArgoCDOverviewCard />
+        </Grid>
+      </EntitySwitch.Case>
       <EntitySwitch.Case if={e => Boolean(isArgocdAvailable(e))}>
           <Grid item sm={6}>
               <EntityArgoCDHistoryCard />
