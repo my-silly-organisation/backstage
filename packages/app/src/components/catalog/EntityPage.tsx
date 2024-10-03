@@ -59,7 +59,9 @@ import {
   isKubernetesAvailable,
 } from '@backstage/plugin-kubernetes';
 
-import { EntityArgoCDHistoryCard,
+import {
+    EntityArgoCDHistoryCard,
+    EntityArgoCDOverviewCard,
     isArgocdAvailable
 } from '@roadiehq/backstage-plugin-argo-cd';
 
