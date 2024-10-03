@@ -1,0 +1,6 @@
+dependencies:
+- name: backstage
+  repository: oci://ghcr.io/backstage/charts
+  version: 1.9.6
+digest: sha256:ef280d7db6a534f3c6b8cdb389c0c6808edf3b534192d0019b215240cbd80a6f
+generated: "2024-10-03T11:03:19.424586+02:00"
