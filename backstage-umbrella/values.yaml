@@ -38,9 +38,7 @@ backstage:
           port: 7007
 
         csp:
-          connect-src: ["'self'"]
-          script-src: ["'self'"]
-          style-src: ["'self'"]
+          connect-src: ["'self'", 'http:', 'https:']
           # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
           # Default Helmet Content-Security-Policy values can be removed by setting the key to false
         reading:
@@ -49,7 +47,7 @@ backstage:
           - host: api.github.com
           - host: raw.githubusercontent.com
         cors:
-          origin: http://localhost:3000
+          origin: http://${BASE_URL}
           methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
           credentials: true
           Access-Control-Allow-Origin: '*'
