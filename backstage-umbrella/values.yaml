@@ -103,7 +103,7 @@ backstage:
         - type: url
           target: ${CATALOG_LOCATION}
           rules:
-          - allow:  [User,Domain, Systems, Group, Component, System, API, Resource, Location]
+          - allow:  [User,Domain, Systems, Group, Component, System, API, Resource, Location, Template]
 
       kubernetes:
         serviceLocatorMethod:
